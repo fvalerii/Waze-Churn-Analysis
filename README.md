@@ -1,4 +1,4 @@
-## Waze User Churn Prediction - Google Advanced Data Analytics - Capstone Project
+## Waze User Churn Prediction Project - Google Advanced Data Analytics
 
 🚗 Project Overview
 
