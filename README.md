@@ -11,10 +11,12 @@
 ---
 
 ## 🚗 Project Overview
+
 This project develops a **machine learning model** to predict **monthly user churn** for Waze. By identifying users at risk of uninstalling or becoming inactive, Waze can strengthen retention strategies and support long‑term business growth.
 ---
 
 ## 🎯 Business Case
+
 Churn is a **critical performance metric** for Waze. High retention indicates satisfied users, which is essential for scaling the business and maintaining a healthy community of map editors and drivers.
 
 This project addresses three strategic questions:
@@ -25,7 +27,7 @@ This project addresses three strategic questions:
 
 ## 🛠️ Methodology — PACE Framework
 
-<summary><strong>1. Plan & Analyze</strong></summary>
+<strong>1. Plan & Analyze</strong>
 - Identified the business problem and defined *churn* as monthly inactivity or app uninstalls.
 - Conducted **Exploratory Data Analysis (EDA)** to explore relationships between:
   - Drive frequency
@@ -52,17 +54,20 @@ This project addresses three strategic questions:
 ---
 
 ## 📈 Key Results
+
 - **Top Predictor:** `activity_days` — Total days the user was active in the app during the month was the strongest indicator of retention.
 - **Model Performance:** The final **XGBoost model** achieved an **F1 score of 0.37** and a **Recall of 0.50**.
 - **Business Impact:** Enables targeted re‑engagement campaigns (notifications, incentives) for high‑risk user segments.
 ---
 
 ## 📦 Project Deliverables
+
 - **[Jupyter Notebook](./waze-churn-project(1).ipynb):** Full end‑to‑end analysis (cleaning → modeling → evaluation).
 - **[PACE Strategy Document](./PACE_Strategy.pdf):** Structured planning and methodology.
 - **[Executive Summary](./Executive_Summary.pdf):** Insights and recommendations for Finance & Operations.
 ---
 
 ## 💻 Tech Stack
+
 - **Language:** Python
 - **Libraries:** Pandas, NumPy, Matplotlib, Seaborn, Scikit‑Learn, XGBoost
