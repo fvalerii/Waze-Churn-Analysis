@@ -1,6 +1,6 @@
-## Waze User Churn Prediction Project - Google Advanced Data Analytics
+### Waze User Churn Prediction Project - Google Advanced Data Analytics
 
-🚗 Project Overview
+#### 🚗 Project Overview
 
 This project was developed as part of the Google Advanced Data Analytics Professional Certificate. The goal is to build a machine learning model to predict monthly user churn for Waze. By identifying users at risk of uninstalls or inactivity, Waze can optimize retention strategies and drive long-term business growth.
 
