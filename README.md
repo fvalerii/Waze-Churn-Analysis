@@ -28,7 +28,6 @@ This project addresses three strategic questions:
 
 ## 🛠️ Methodology — PACE Framework
 
-<details>
 <summary><strong>1. Plan & Analyze</strong></summary>
 
 - Identified the business problem and defined *churn* as monthly inactivity or app uninstalls  
@@ -37,9 +36,7 @@ This project addresses three strategic questions:
   - Device type  
   - Retention behavior  
 
-</details>
 
-<details>
 <summary><strong>2. Construct — Feature Engineering & Modeling</strong></summary>
 
 **Feature Engineering:**
@@ -52,16 +49,13 @@ This project addresses three strategic questions:
   - **Random Forest** — strong baseline + feature importance  
   - **XGBoost** — superior predictive accuracy and efficient boosting  
 
-</details>
 
-<details>
 <summary><strong>3. Execute — Evaluation & Recommendations</strong></summary>
 
 - Evaluated models using **Precision**, **Recall**, and **F1‑score**  
 - Applied **Threshold Tuning** (set to *0.089*) to increase recall  
 - Achieved **50% identification** of users likely to churn  
 
-</details>
 
 ---
 
@@ -74,13 +68,11 @@ This project addresses three strategic questions:
 
 ## 📦 Project Deliverables
 
-<details>
 
 - **Jupyter Notebook:** Full end‑to‑end analysis (cleaning → modeling → evaluation)  
 - **PACE Strategy Document:** Structured planning and methodology  
 - **Executive Summary:** Insights and recommendations for Finance & Operations  
 
-</details>
 
 ---
 
