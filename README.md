@@ -21,10 +21,11 @@ Churn is a critical performance metric for Waze. High retention indicates satisf
 
 ---
 
-## 📊 Data Source
+# 📊 Data Source
 The dataset used in this analysis is hosted on Kaggle. To replicate this project:
-1. Download the **waze_dataset.csv** from [Kaggle](https://www.kaggle.com/datasets/juliasuzuki/waze-dataset-to-predict-user-churn).
-2. Place the file inside the `/data` folder in your local repository.
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/juliasuzuki/waze-dataset-to-predict-user-churn).
+2. Extract the downloaded `archive.zip` file to locate **waze_dataset.csv**.
+3. Place **waze_dataset.csv** inside the `/data` folder in your local repository.
 
 ---
 
