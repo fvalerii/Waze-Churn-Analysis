@@ -1,56 +1,52 @@
-### Waze User Churn Prediction Project - Google Advanced Data Analytics
+🛰️ Waze User Churn Prediction
+Google Advanced Data Analytics Professional Certificate
+<p align="center"><img src="https://via.placeholder.com/1000x220.png?text=Waze+User+Churn+Prediction+Project" alt="Project Banner"/></p>
+<p align="center"><img src="https://img.shields.io/badge/Status-Completed-brightgreen" /><img src="https://img.shields.io/badge/Model-XGBoost-blue" /><img src="https://img.shields.io/badge/Tech%20Stack-Python%20%7C%20Pandas%20%7C%20Sklearn-orange" /><img src="https://img.shields.io/badge/Focus-Churn%20Prediction-purple" /></p>
 
-#### 🚗 Project Overview
-
-This project was developed as part of the Google Advanced Data Analytics Professional Certificate. The goal is to build a machine learning model to predict monthly user churn for Waze. By identifying users at risk of uninstalls or inactivity, Waze can optimize retention strategies and drive long-term business growth.
+🚗 Project Overview
+This project develops a machine learning model to predict monthly user churn for Waze. By identifying users at risk of uninstalling or becoming inactive, Waze can strengthen retention strategies and support long‑term business growth.
 
 🎯 Business Case
+Churn is a critical performance metric for Waze. High retention reflects user satisfaction and supports the platform’s ecosystem of drivers and map editors.
+This project addresses three strategic questions:
+- Who is most likely to churn
+- Why users churn
+- When churn is likely to occur
 
-Churn is a critical metric for Waze. High retention indicates satisfied users, which is essential for scaling the business and maintaining a healthy community of map editors and drivers. This project addresses three core questions for Waze leadership:
-
-1. Who are the users most likely to churn?
-
-2. Why do users churn?
-
-3. When do users churn?
-
-🛠️ Methodology: The PACE Framework
-I followed the PACE (Plan, Analyze, Construct, Execute) strategy to ensure a structured approach to problem-solving:
-
-1. Plan & Analyze
-Identified the business problem and defined "churn" (monthly inactivity/uninstalls).
-
-Performed Exploratory Data Analysis (EDA) to find correlations between drive frequency, device type, and retention.
-
-2. Construct (Feature Engineering & Modeling)
-Feature Engineering: Developed new predictors such as km_per_driving_day and percent_sessions_in_last_month.
-
-Model Selection: Designed and implemented two ensemble learners:
-
-Random Forest: For robust baseline performance and feature importance analysis.
-
-XGBoost: For superior predictive accuracy and gradient boosting efficiency.
-
-3. Execute (Evaluation & Recommendations)
-    Evaluated models using Precision, Recall, and F1-score.
-
-    Implemented Threshold Tuning (lowered to 0.089) to increase recall, ensuring the model identifies 50% of the churning population.
+🛠️ Methodology — PACE Framework
+<details><summary><strong>1. Plan & Analyze</strong></summary>
+- Defined churn as monthly inactivity or app uninstalls
+- Conducted Exploratory Data Analysis (EDA) to explore relationships between:
+- Drive frequency
+- Device type
+- Retention behavior
+</details>
+<details><summary><strong>2. Construct — Feature Engineering & Modeling</strong></summary>
+Feature Engineering:
+- km_per_driving_day
+- percent_sessions_in_last_month
+Model Development:
+- Random Forest — strong baseline + feature importance
+- XGBoost — superior predictive accuracy and efficient boosting
+</details>
+<details><summary><strong>3. Execute — Evaluation & Recommendations</strong></summary>
+- Evaluated using Precision, Recall, and F1‑score
+- Applied Threshold Tuning (set to 0.089) to increase recall
+- Achieved 50% identification of users likely to churn
+</details>
 
 📈 Key Results
-Top Predictors: The most influential factor in predicting churn was activity_days (total days the user was active in the app during the month).
-
-Model Performance: The final XGBoost model achieved an F1 score of 0.37, providing a data-driven baseline for identifying high-risk users.
-
-Business Impact: By identifying at-risk users, Waze can now target the identified segment with proactive re-engagement offers.
+- Top Predictor: activity_days — total active days per month
+- Model Performance: Final XGBoost model achieved an F1 score of 0.37
+- Business Impact: Enables targeted re‑engagement campaigns for high‑risk users
 
 📦 Project Deliverables
-Jupyter Notebook: Complete end-to-end Python analysis, from cleaning to deployment.
-
-PACE Strategy Document: Detailed project management and planning documentation.
-
-Executive Summary: A concise report of findings and strategic recommendations for the Finance and Operations departments.
+<details><summary><strong>Click to expand</strong></summary>
+- Jupyter Notebook: Full end‑to‑end analysis (cleaning → modeling → evaluation)
+- PACE Strategy Document: Structured planning and methodology
+- Executive Summary: Insights and recommendations for Finance & Operations
+</details>
 
 💻 Tech Stack
-Language: Python
-
-Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit-Learn, XGBoost
+- Language: Python
+- Libraries: Pandas, NumPy, Matplotlib, Seaborn, Scikit‑Learn, XGBoost
