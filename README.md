@@ -16,7 +16,7 @@ This project develops a **machine learning model** to predict **monthly user chu
 ---
 
 ## 🎯 Business Case
-Churn is a **critical performance metric** for Waze. High retention reflects user satisfaction and supports the platform’s ecosystem of drivers and map editors.
+Churn is a **critical performance metric** for Waze. High retention indicates satisfied users, which is essential for scaling the business and maintaining a healthy community of map editors and drivers.
 
 This project addresses three strategic questions:
 
