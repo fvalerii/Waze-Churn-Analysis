@@ -51,7 +51,7 @@ The dataset used in this analysis is hosted on Kaggle. To replicate this project
     * **XGBoost** prioritized `total_sessions` (volume of use) and `n_days_after_onboarding` (user tenure) as the most important predictors.
 * **Strategic Insight:** The model identifies long-term "loyalty" and usage volume as better predictors of retention than simple daily activity.
 
-![XGBoost Feature Importance](./images/xgb_feature_importance.png)
+![XGBoost Feature Importance](../images/xgb_feature_importance.png)
 
 * **Model Selection:** **XGBoost** was selected as the champion model for its superior performance on the validation and test sets.
 * **Strategic Recommendation:** I recommend **not deploying this model for automated business decisions** until more granular data is gathered (e.g., geographic locations, specific destination counts, and more detailed app interaction logs).
