@@ -26,7 +26,6 @@ This project addresses three strategic questions:
 ## 🛠️ Methodology — PACE Framework
 
 <summary><strong>1. Plan & Analyze</strong></summary>
-
 - Identified the business problem and defined *churn* as monthly inactivity or app uninstalls.
 - Conducted **Exploratory Data Analysis (EDA)** to explore relationships between:
   - Drive frequency
