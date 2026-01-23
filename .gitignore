@@ -1,7 +1,8 @@
 # Jupyter Notebooks
 .ipynb_checkpoints
 */.ipynb_checkpoints/*
-data/
+data/*
+!data/.gitkeep
 
 # Python
 __pycache__/
