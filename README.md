@@ -47,7 +47,7 @@ Churn is a critical performance metric for Waze. High retention indicates satisf
 ---
 
 ## 📦 Project Deliverables
-- **[Jupyter Notebook](./waze-churn-project(1).ipynb):** Full end-to-end Python analysis (cleaning → modeling → threshold tuning).
+- **[Jupyter Notebook](./waze-churn-project.ipynb):** Full end-to-end Python analysis (cleaning → modeling → threshold tuning).
 - **[Executive Summary](./Waze_Course_6_executive_summary.pdf):** A high-level report on model performance and data recommendations for leadership.
 - **PACE Strategy Document:** Detailed project planning and methodology documentation.
 
