@@ -9,55 +9,47 @@
 ---
 
 ## 🚗 Project Overview
-This project focuses on building a machine learning model to predict **monthly user churn** for Waze. In this context, "churn" is defined as users who have uninstalled the app or stopped using it for the month. Identifying these users early allows Waze to optimize retention strategies, enhance user experience, and make data-driven decisions about product development.
-
-
+This project develops a machine learning model to predict **monthly user churn** for Waze. By identifying users at risk of uninstalling or becoming inactive, the goal is to provide Waze with actionable insights to optimize retention and product development.
 
 ---
 
 ## 🎯 Business Case
-User retention is a primary growth driver for Waze. High retention indicates satisfied users and a stable community of map editors and drivers. This project addresses three strategic questions for Waze leadership:
-- **Who** are the users most likely to churn?
-- **Why** do users churn (identifying the key behaviors)?
-- **When** is churn likely to occur?
+Churn is a critical performance metric for Waze. High retention indicates satisfied users and a stable community. In collaboration with stakeholders from **Finance (Emrick Larson)** and **Operations (Ursula Sayo)**, this project investigates:
+- **Who** is most likely to churn?
+- **Why** do users churn (key behavioral drivers)?
+- **What** additional data is needed to improve predictive accuracy?
 
 ---
 
 ## 🛠️ Methodology — PACE Framework
 
 ### 1. Plan & Analyze
-* **Problem Definition:** Defined the business goal—preventing monthly churn—and mapped out the project milestones using the PACE framework.
-* **Exploratory Data Analysis (EDA):** Investigated data distributions and handled extreme outliers. I analyzed correlations between drive frequency, device types (iPhone vs. Android), and retention behavior.
-* **Data Cleaning:** Prepared the dataset for modeling by handling missing values and ensuring consistent variable types for the modeling pipeline.
+* **Exploratory Data Analysis (EDA):** Investigated relationships between drive frequency, device types, and retention behavior.
+* **Data Assessment:** Identified that existing features had relatively low predictive power regarding churn, suggesting that user behavior is complex and likely influenced by factors outside the current dataset.
 
 ### 2. Construct (Feature Engineering & Modeling)
-* **Feature Engineering:** Developed new behavioral predictors to better capture user intent, including:
-    * `km_per_driving_day`: Captures average daily usage intensity.
-    * `percent_sessions_in_last_month`: Measures recent engagement drops.
-* **Model Development:** Designed and tuned two ensemble machine learning models:
-    * **Random Forest:** Used as a robust baseline for performance and feature importance.
-    * **XGBoost:** Implemented to achieve superior predictive accuracy through gradient boosting.
+* **Feature Engineering:** Created several new predictors; notably, **6 of the top 10 features** in the final model were engineered features (e.g., `km_per_driving_day`).
+* **Model Development:** Compared **Logistic Regression**, **Random Forest**, and **XGBoost**. The ensemble tree-based models (RF and XGBoost) significantly outperformed the linear model.
 
 ### 3. Execute (Evaluation & Recommendations)
-* **Performance Metrics:** Evaluated models using Precision, Recall, and F1-score.
-* **Threshold Tuning:** To meet the business need of capturing more potential churners, I adjusted the decision threshold to **0.089**. This increased recall to **0.50**, successfully identifying half of the churning population.
-* **Strategy:** Summarized findings for cross-departmental stakeholders to assist in data-driven decision-making.
+* **Performance Metrics:** While the XGBoost model achieved a high accuracy (~70%), the baseline **Recall was low (~16%)**.
+* **Threshold Tuning:** To explore business utility, I adjusted the decision threshold to **0.089**, which boosted **Recall to 50%** at the cost of Precision. 
+* **Final Verdict:** Due to the high number of false negatives, the current model serves as a strong **baseline** but requires further data refinement before being deployed for high-stakes business decisions.
 
 ---
 
-## 📈 Key Results
-* **Strongest Predictor:** `activity_days` was the most influential feature. A decrease in active days within the month is the strongest signal that a user is about to churn.
-* **Final Model Performance:** The optimized XGBoost model achieved an **F1 score of 0.373** and an **Accuracy of 70.2%** on the test set.
-* **Business Impact:** By utilizing the tuned threshold, Waze can now target at-risk users with proactive re-engagement offers (e.g., push notifications or localized promotions) before they leave the platform.
-
-
+## 📈 Key Results & Recommendations
+* **Top Predictor:** `activity_days` was the strongest indicator of retention.
+* **Model Selection:** **XGBoost** was selected as the champion model for its superior performance on the validation and test sets.
+* **Strategic Recommendation:** I recommend **not deploying this model for automated business decisions** until more granular data is gathered (e.g., geographic locations, specific destination counts, and more detailed app interaction logs).
+* **Future Work:** Focus on gathering "intent-based" data to help differentiate between casual users and those truly at risk of leaving the platform.
 
 ---
 
 ## 📦 Project Deliverables
-- **[Jupyter Notebook](./waze-churn-project(1).ipynb):** The complete end-to-end technical analysis and model build.
-- **PACE Strategy Document:** Detailed documentation of project management and strategic planning.
-- **Executive Summary:** A concise report of findings and recommendations tailored for non-technical leadership.
+- **[Jupyter Notebook](./waze-churn-project(1).ipynb):** Full end-to-end Python analysis (cleaning → modeling → threshold tuning).
+- **[Executive Summary](./Waze_Course_6_executive_summary.pdf):** A high-level report on model performance and data recommendations for leadership.
+- **PACE Strategy Document:** Detailed project planning and methodology documentation.
 
 ---
 
@@ -67,3 +59,5 @@ User retention is a primary growth driver for Waze. High retention indicates sat
 - **Framework:** PACE (Plan, Analyze, Construct, Execute)
 
 ---
+
+> **Note:** The data, characters, and incidents portrayed in this project are synthetic and were created by Google for pedagogical purposes as part of the Advanced Data Analytics Certificate.
