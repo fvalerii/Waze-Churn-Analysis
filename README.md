@@ -69,7 +69,7 @@ This project addresses three strategic questions:
 ## 📦 Project Deliverables
 
 
-- **[Jupyter Notebook](./waze-churn-project(1).ipynb):** Full end‑to‑end analysis (cleaning → modeling → evaluation)  
+- **[Jupyter Notebook](./waze-churn-project.ipynb):** Full end‑to‑end analysis (cleaning → modeling → evaluation)  
 - **PACE Strategy Document:** Structured planning and methodology  
 - **Executive Summary:** Insights and recommendations for Finance & Operations  
 
