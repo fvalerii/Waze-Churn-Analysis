@@ -31,7 +31,7 @@ This project addresses three strategic questions:
 <details>
 <summary><strong>1. Plan & Analyze</strong></summary>
 
-- Defined *churn* as monthly inactivity or app uninstalls  
+- Identified the business problem and defined *churn* as monthly inactivity or app uninstalls  
 - Conducted **Exploratory Data Analysis (EDA)** to explore relationships between:
   - Drive frequency  
   - Device type  
@@ -42,20 +42,22 @@ This project addresses three strategic questions:
 <details>
 <summary><strong>2. Construct — Feature Engineering & Modeling</strong></summary>
 
-**Feature Engineering:**  
-- `km_per_driving_day`  
-- `percent_sessions_in_last_month`  
+**Feature Engineering:**
+- Developed new predictors as:
+  - `km_per_driving_day`  
+  - `percent_sessions_in_last_month`  
 
-**Model Development:**  
-- **Random Forest** — strong baseline + feature importance  
-- **XGBoost** — superior predictive accuracy and efficient boosting  
+**Model Development:**
+- Designed and implemented two ensemble learners:
+  - **Random Forest** — strong baseline + feature importance  
+  - **XGBoost** — superior predictive accuracy and efficient boosting  
 
 </details>
 
 <details>
 <summary><strong>3. Execute — Evaluation & Recommendations</strong></summary>
 
-- Evaluated using **Precision**, **Recall**, and **F1‑score**  
+- Evaluated models using **Precision**, **Recall**, and **F1‑score**  
 - Applied **Threshold Tuning** (set to *0.089*) to increase recall  
 - Achieved **50% identification** of users likely to churn  
 
@@ -64,7 +66,7 @@ This project addresses three strategic questions:
 ---
 
 ## 📈 Key Results
-- **Top Predictor:** `activity_days` — total active days per month  
+- **Top Predictor:** `activity_days` — total days the user was active in the app during the month 
 - **Model Performance:** Final **XGBoost model** achieved an **F1 score of 0.37**  
 - **Business Impact:** Enables targeted re‑engagement campaigns for high‑risk users  
 
