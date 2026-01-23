@@ -75,7 +75,6 @@ This project addresses three strategic questions:
 ## 📦 Project Deliverables
 
 <details>
-<summary><strong>Click to expand</strong></summary>
 
 - **Jupyter Notebook:** Full end‑to‑end analysis (cleaning → modeling → evaluation)  
 - **PACE Strategy Document:** Structured planning and methodology  
