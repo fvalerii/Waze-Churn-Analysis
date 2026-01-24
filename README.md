@@ -35,12 +35,12 @@ To replicate this research environment:
 #### Option A: Using Pip
 ```bash
 pip install -r requirements.txt
-
+```
 #### Option B: Using Conda
 ```bash
 conda env create -f environment.yml
 conda activate waze_research
-
+```
 ---
 
 ## 🛠️ Methodology — PACE Framework
