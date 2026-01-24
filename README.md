@@ -33,10 +33,11 @@ The dataset used in this analysis is hosted on Kaggle. To replicate this project
 To replicate this research environment:
 
 #### Option A: Using Pip
-```bash```
+```bash
 pip install -r requirements.txt
 
 #### Option B: Using Conda
+```bash
 conda env create -f environment.yml
 conda activate waze_research
 
