@@ -18,5 +18,8 @@ Thumbs.db
 
 # Project specific
 *.log
+*.zip
+*.pkl
+*.pickle
 .vscode/
 .idea/
