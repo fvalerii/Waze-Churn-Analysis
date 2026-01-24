@@ -61,10 +61,10 @@ The dataset used in this analysis is hosted on Kaggle. To replicate this project
 ---
 
 ## 📦 Project Deliverables
-- **[Project Proposal](./docs/Waze-Project-Proposal.pdf):** Initial scope, milestones, and stakeholder alignment.
-- **[PACE Strategy Document](./docs/Waze-PACE-Strategy-Document.pdf):** Detailed project planning, methodology, and ethical assessment.
-- **[Jupyter Notebook](./notebooks/Waze-Churn-Analysis.ipynb):** Full end-to-end Python analysis (Cleaning → Modeling → Threshold Tuning).
-- **[Executive Summary](./docs/Waze-Executive-Summary.pdf):** High-level report on model performance and strategic recommendations.
+- **[Project Proposal](./docs/Waze_Project_Proposal.pdf):** Initial scope, milestones, and stakeholder alignment.
+- **[PACE Strategy Document](./docs/Waze_PACE_Strategy_Document.pdf):** Detailed project planning, methodology, and ethical assessment.
+- **[Jupyter Notebook](./notebooks/Waze_Churn_Analysis.ipynb):** Full end-to-end Python analysis (Cleaning → Modeling → Threshold Tuning).
+- **[Executive Summary](./docs/Waze_Executive_Summary.pdf):** High-level report on model performance and strategic recommendations.
 
 ---
 
