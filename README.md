@@ -29,6 +29,19 @@ The dataset used in this analysis is hosted on Kaggle. To replicate this project
 
 ---
 
+## ⚙️ Installation & Setup
+To replicate this research environment:
+
+### Option A: Using Pip
+```bash```
+pip install -r requirements.txt
+
+### Option B: Using Conda
+conda env create -f environment.yml
+conda activate waze_research
+
+---
+
 ## 🛠️ Methodology — PACE Framework
 
 ### 1. Plan & Analyze
