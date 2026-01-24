@@ -75,10 +75,10 @@ conda activate waze_research
 ---
 
 ## 📦 Project Deliverables
-- **[Project Proposal](./docs/Waze_Project_Proposal.pdf):** Initial scope, milestones, and stakeholder alignment.
-- **[PACE Strategy Document](./docs/Waze_PACE_Strategy_Document.pdf):** Detailed project planning, methodology, and ethical assessment.
-- **[Jupyter Notebook](./notebooks/Waze_Churn_Analysis.ipynb):** Full end-to-end Python analysis (Cleaning → Modeling → Threshold Tuning).
-- **[Executive Summary](./docs/Waze_Executive_Summary.pdf):** High-level report on model performance and strategic recommendations.
+- **[Project Proposal](./docs/waze_project_proposal.pdf):** Initial scope, milestones, and stakeholder alignment.
+- **[PACE Strategy Document](./docs/waze_pace_strategy_document.pdf):** Detailed project planning, methodology, and ethical assessment.
+- **[Jupyter Notebook](./notebooks/waze_churn_analysis.ipynb):** Full end-to-end Python analysis (Cleaning → Modeling → Threshold Tuning).
+- **[Executive Summary](./docs/waze_executive_summary.pdf):** High-level report on model performance and strategic recommendations.
 
 ---
 
