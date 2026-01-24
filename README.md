@@ -14,7 +14,7 @@ This project develops a machine learning model to predict **monthly user churn**
 ---
 
 ## 🎯 Business Case
-Churn is a critical performance metric for Waze. High retention indicates satisfied users and a stable community. In collaboration with stakeholders from **Finance (Emrick Larson)** and **Operations (Ursula Sayo)**, this project investigates:
+Churn is a critical performance metric for Waze. High retention indicates satisfied users and a stable community. In collaboration with **Finance** and **Operations** stakeholders, this project investigates:
 - **Who** is most likely to churn?
 - **Why** do users churn (key behavioral drivers)?
 - **What** additional data is needed to improve predictive accuracy?
@@ -55,6 +55,7 @@ The dataset used in this analysis is hosted on Kaggle. To replicate this project
 ![XGBoost Feature Importance](./images/xgb_feature_importance.png)
 
 * **Model Selection:** **XGBoost** was selected as the champion model for its superior performance on the validation and test sets.
+* * **Threshold Tuning:** By shifting the decision threshold to **0.089**, I successfully prioritized **Recall (50%)** to identify at-risk users, acknowledging the research trade-off between sensitivity and precision in noisy datasets.
 * **Strategic Recommendation:** I recommend **not deploying this model for automated business decisions** until more granular data is gathered (e.g., geographic locations, specific destination counts, and more detailed app interaction logs).
 * **Future Work:** Focus on gathering "intent-based" data to help differentiate between casual users and those truly at risk of leaving the platform.
 
