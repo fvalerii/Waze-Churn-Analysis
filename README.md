@@ -25,7 +25,7 @@ Churn is a critical performance metric for Waze. High retention indicates satisf
 To replicate this research environment:
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/fvalerii/waze-churn-prediction.git](https://github.com/fvalerii/waze-churn-prediction.git)
+git clone https://github.com/fvalerii/waze-churn-prediction.git
 ```
 ### 2. Install Required Python Packages
 Ensure you have Python 3.x installed, then run:
