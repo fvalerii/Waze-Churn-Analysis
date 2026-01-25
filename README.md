@@ -1,4 +1,4 @@
-# 🛰️ Waze User Churn Prediction  
+# 🛰️ Waze User Churn: Predictive Modeling & Threshold Optimization
 ### *Google Advanced Data Analytics Capstone Project*
 
 ![Status](https://img.shields.io/badge/Status-Completed-brightgreen)
