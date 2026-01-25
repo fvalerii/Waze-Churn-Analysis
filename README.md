@@ -21,26 +21,31 @@ Churn is a critical performance metric for Waze. High retention indicates satisf
 
 ---
 
-## 📊 Data Source
-The dataset used in this analysis is hosted on Kaggle. To replicate this project:
-1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/juliasuzuki/waze-dataset-to-predict-user-churn).
-2. Extract the downloaded `archive.zip` file to locate **waze_dataset.csv**.
-3. Place **waze_dataset.csv** inside the `/data` folder in your local repository.
-
----
-
 ## ⚙️ Installation & Setup
 To replicate this research environment:
-
-#### Option A: Using Pip
+### 1. Clone the Repository
+```bash
+git clone [https://github.com/fvalerii/Waze-Churn-Prediction.git](https://github.com/fvalerii/Waze-User-Churn-Prediction-Project.git)
+```
+### 2. Install Required Python Packages
+Ensure you have Python 3.x installed, then run:
+##### Option A: Using Pip
 ```bash
 pip install -r requirements.txt
 ```
-#### Option B: Using Conda
+##### Option B: Using Conda
 ```bash
 conda env create -f environment.yml
 conda activate waze_research
 ```
+### 3. Data Setup (Mandatory)
+The dataset is hosted on Kaggle. To replicate this project:
+1. Download the dataset from [Kaggle](https://www.kaggle.com/datasets/juliasuzuki/waze-dataset-to-predict-user-churn).
+2. Extract the `archive.zip` file to locate **waze_dataset.csv**.
+3. Place **waze_dataset.csv** inside the`/data/` folder of this project.
+### 4. Run the Analysis
+Open the Jupyter Notebook located at notebooks/waze_churn_analysis.ipynb using VS Code or JupyterLab.
+
 ---
 
 ## 🛠️ Methodology — PACE Framework
@@ -71,7 +76,7 @@ conda activate waze_research
 * **Model Selection:** **XGBoost** was selected as the champion model for its superior performance on the validation and test sets.
 * * **Threshold Tuning:** By shifting the decision threshold to **0.089**, I successfully prioritized **Recall (50%)** to identify at-risk users, acknowledging the research trade-off between sensitivity and precision in noisy datasets.
 * **Strategic Recommendation:** I recommend **not deploying this model for automated business decisions** until more granular data is gathered (e.g., geographic locations, specific destination counts, and more detailed app interaction logs).
-* **Future Work:** Focus on gathering "intent-based" data to help differentiate between casual users and those truly at risk of leaving the platform.
+* **Future Work:** Focus on gathering telemetry data and app-interaction logs to improve predictive precision.
 
 ---
 
