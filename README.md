@@ -25,7 +25,7 @@ Churn is a critical performance metric for Waze. High retention indicates satisf
 To replicate this research environment:
 ### 1. Clone the Repository
 ```bash
-git clone [https://github.com/fvalerii/Waze-Churn-Prediction.git](https://github.com/fvalerii/Waze-User-Churn-Prediction-Project.git)
+git clone [https://github.com/fvalerii/Waze-Churn-Prediction.git](https://github.com/fvalerii/Waze-Churn-Prediction.git)
 ```
 ### 2. Install Required Python Packages
 Ensure you have Python 3.x installed, then run:
@@ -50,15 +50,15 @@ Open the Jupyter Notebook located at notebooks/waze_churn_analysis.ipynb using V
 
 ## 🛠️ Methodology — PACE Framework
 
-### 1. Plan & Analyze
+### 🔍 1. Plan & Analyze
 * **Exploratory Data Analysis (EDA):** Investigated relationships between drive frequency, device types, and retention behavior.
 * **Data Assessment:** Identified that existing features had relatively low predictive power regarding churn, suggesting that user behavior is complex and likely influenced by factors outside the current dataset.
 
-### 2. Construct (Feature Engineering & Modeling)
+### 🏗️ 2. Construct (Feature Engineering & Modeling)
 * **Feature Engineering:** Created several new predictors; notably, **6 of the top 10 features** in the final model were engineered features (e.g., `km_per_driving_day`).
 * **Model Development:** Compared **Logistic Regression**, **Random Forest**, and **XGBoost**. The ensemble tree-based models (RF and XGBoost) significantly outperformed the linear model.
 
-### 3. Execute (Evaluation & Recommendations)
+### 📊 3. Execute (Evaluation & Recommendations)
 * **Performance Metrics:** While the XGBoost model achieved a high accuracy (~70%), the baseline **Recall was low (~16%)**.
 * **Threshold Tuning:** To explore business utility, I adjusted the decision threshold to **0.089**, which boosted **Recall to 50%** at the cost of Precision. 
 * **Final Verdict:** Due to the high number of false negatives, the current model serves as a strong **baseline** but requires further data refinement before being deployed for high-stakes business decisions.
@@ -69,7 +69,7 @@ Open the Jupyter Notebook located at notebooks/waze_churn_analysis.ipynb using V
 * **Feature Divergence:**
    * **Random Forest** identified `activity_days` (frequency of use) as the most critical driver. 
    * **XGBoost** prioritized `total_sessions` (volume of use) and `n_days_after_onboarding` (user tenure) as the most important predictors.
-* **Strategic Insight:** The model identifies long-term "loyalty" and usage volume as better predictors of retention than simple daily activity.
+* **Strategic Insight:** The XGBoost model identifies long-term "loyalty" and usage volume as better predictors of retention than simple daily activity.
 
 ![XGBoost Feature Importance](./images/xgb_feature_importance.png)
 
